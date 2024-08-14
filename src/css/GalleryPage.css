@@ -1,0 +1,135 @@
+/* General styles for the gallery page */
+.gallery-page {
+    background-color: #f0f0f0;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif; /* Use a modern, clean font */
+    padding-top: 70px; /* Adjust padding to account for fixed header */
+  }
+  
+  /* Styles for the page title */
+  .gallery-page h1 {
+    text-align: center;
+    color: #333;
+    font-size: 3em;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  /* Container for the gallery content */
+  .gallery-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  /* Styles for individual gallery cards */
+  .gallery-card {
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gallery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Container for the gallery image */
+  .gallery-image-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+  }
+  
+  .gallery-image-container:hover .gallery-image {
+    transform: scale(1.05);
+  }
+  
+  /* Styles for the gallery details */
+  .gallery-details {
+    padding: 20px 30px;
+  }
+  
+  .gallery-details h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 2em;
+    font-weight: 600;
+  }
+  
+  .gallery-details p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .gallery-page {
+      padding: 10px;
+    }
+  
+    .gallery-page h1 {
+      font-size: 2.5em;
+    }
+  
+    .gallery-content {
+      gap: 30px;
+    }
+  
+    .gallery-details {
+      padding: 15px 20px;
+    }
+  
+    .gallery-details h2 {
+      font-size: 1.5em;
+    }
+  
+    .gallery-details p {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-page {
+      padding: 5px;
+    }
+  
+    .gallery-page h1 {
+      font-size: 2em;
+    }
+  
+    .gallery-content {
+      gap: 20px;
+    }
+  
+    .gallery-details {
+      padding: 10px 15px;
+    }
+  
+    .gallery-details h2 {
+      font-size: 1.3em;
+    }
+  
+    .gallery-details p {
+      font-size: 0.9em;
+    }
+  }
+  

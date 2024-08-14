@@ -1,0 +1,62 @@
+/* Footer.css */
+
+.footer {
+    background-color: #000; /* Black background */
+    color: #FCF9EA; /* Light color for text to contrast with the black background */
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1rem; /* Adjust size as needed */
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info .fa-icon {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.join-club p {
+    font-size: 1.2rem; /* Larger font size for emphasis */
+    margin: 15px 0; /* Add some space above and below */
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    color: #FCF9EA; /* Light color for icons */
+    margin: 0 10px;
+    font-size: 1.5rem; /* Adjust size as needed */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #49BEB7; /* Change color on hover */
+}
+
+/* Ensure full height for body and html */
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+/* Ensure app container takes full height and positions footer at the bottom */
+.app {
+    min-height: 100vh; /* Ensure the app takes full height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Use margin-top: auto on the footer for it to push to the bottom */
+.footer {
+    margin-top: auto; /* Pushes footer to the bottom */
+}

@@ -1,0 +1,113 @@
+/* Base styles */
+.announcements-page {
+    background-color: #e0d7ce; /* Light grey background */
+    padding: 20px;
+    min-height: 100vh; /* Ensure the page covers the full viewport height */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a professional font */
+}
+
+.announcements-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.announcements-content h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.announcements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between cards */
+}
+
+.announcement-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space within card */
+    transition: box-shadow 0.3s;
+}
+
+.announcement-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.announcement-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.announcement-date, .announcement-time {
+    color: #0073b1; /* LinkedIn blue color */
+}
+
+.announcement-text {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .announcements-content {
+        padding: 10px;
+    }
+
+    .announcements-content h1 {
+        font-size: 1.5em;
+    }
+
+    .announcement-card {
+        padding: 10px 15px;
+    }
+
+    .announcement-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .announcement-date, .announcement-time {
+        font-size: 0.8em;
+    }
+
+    .announcement-text {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .announcements-content {
+        padding: 5px;
+    }
+
+    .announcements-content h1 {
+        font-size: 1.2em;
+    }
+
+    .announcement-card {
+        padding: 8px 10px;
+    }
+
+    .announcement-header {
+        font-size: 0.8em;
+    }
+
+    .announcement-date, .announcement-time {
+        font-size: 0.7em;
+    }
+
+    .announcement-text {
+        font-size: 0.8em;
+    }
+}

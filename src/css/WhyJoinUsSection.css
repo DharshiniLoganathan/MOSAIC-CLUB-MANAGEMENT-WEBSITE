@@ -1,0 +1,47 @@
+/* src/components/WhyJoinUsSection.css */
+
+.why-join-us-section {
+    padding: 40px 20px;
+    background-color: #FCF9EA; /* Background color for the section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,124 @@
+.signin-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: linear-gradient(135deg, #c2e9fb, #e6f7ff); */
+    background: linear-gradient(135deg, #a2c2e6, #f1c6c6); /* Diagonal gradient background */
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
+}
+
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 30px;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+
+.signin-form-wrapper {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.signin-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #f0f4f8;
+}
+
+.signin-toggle {
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signin-toggle.active {
+    background:  #FF6F00;
+    color: #ffffff;
+}
+
+.signin-toggle:hover {
+    background: #e6f0ff;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.signin-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.signin-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.signin-form input:focus {
+    border-color:  #FF6F00;
+    outline: none;
+}
+
+.signin-form button {
+    background-color: #FF6F00;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.signin-form button:hover {
+    background-color:  #FF6F00;
+}
+
+.signup-link {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-link p {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.signup-link a {
+    color:  #FF6F00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}

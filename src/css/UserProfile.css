@@ -1,0 +1,208 @@
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a2c2e6, #f1c6c6); /* Diagonal gradient background */
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
+    padding-top: 80px;
+    position: relative;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.profile-card {
+    width: 90%;
+    max-width: 1200px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px #bcbcbc, -8px -8px 16px #ffffff; /* Neumorphic shadows */
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 4px #ffffff, 0 0 0 6px #bcbcbc; /* Neumorphic shadow */
+}
+
+.user-details {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: flex-start;
+    position: relative;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center name horizontally */
+    margin-top: 20px; /* Add margin to position name slightly below the profile photo */
+}
+
+.name-container h1,
+.name-container input.name-input {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+}
+
+.name-container input.name-input {
+    display: block;
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    background: #e0e0e0;
+    box-shadow: inset 8px 8px 16px #bcbcbc, inset -8px -8px 16px #ffffff;
+    transition: box-shadow 0.3s;
+}
+
+.name-container input.name-input:focus {
+    outline: none;
+    box-shadow: inset 12px 12px 24px #bcbcbc, inset -12px -12px 24px #ffffff;
+}
+
+.name-container p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+
+.details-section {
+    margin-top: 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 25px; /* Decreased font size */
+    color: #333;
+}
+
+.edit-icon {
+    font-size: 20px;
+    color: #FF6F00;
+    cursor: pointer;
+}
+
+.edit-icon:hover {
+    color: #000000;
+}
+
+.details-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-form .form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.details-form .form-field label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.details-form .form-field input,
+.details-form .form-field select,
+.details-form .form-field textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #333;
+    background: #e0e0e0;
+    box-shadow: inset 8px 8px 16px #bcbcbc, inset -8px -8px 16px #ffffff;
+    transition: box-shadow 0.3s;
+}
+
+.details-form .form-field input:focus,
+.details-form .form-field select:focus,
+.details-form .form-field textarea:focus {
+    outline: none;
+    box-shadow: inset 12px 12px 24px #bcbcbc, inset -12px -12px 24px #ffffff;
+}
+
+.details-form .form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-form .save-btn,
+.details-form .cancel-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.details-form .save-btn {
+    background-color: #FF6F00;
+    color: white;
+    box-shadow: 8px 8px 16px #bcbcbc, -8px -8px 16px #ffffff;
+}
+
+.details-form .save-btn:hover {
+    background-color: #000000;
+}
+
+.details-form .cancel-btn {
+    background-color: #FF6F00;
+    color: white;
+    box-shadow: 8px 8px 16px #bcbcbc, -8px -8px 16px #ffffff;
+}
+
+.details-form .cancel-btn:hover {
+    background-color: #000000;
+}
+
+.details-form .save-btn .icon,
+.details-form .cancel-btn .icon {
+    margin-right: 8px;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}

@@ -1,0 +1,212 @@
+.blog-page {
+    background-color: #F7F7F7; /* Light grey background */
+    background-image: url('../image/bgblog.webp'); /* Use the background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the image */
+    padding: 20px;
+    min-height: 100vh; /* Ensure the page covers the full viewport height */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Use a modern font */
+}
+
+.blog-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative; /* To position the button correctly */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+    border-radius: 8px;
+}
+
+.blog-content h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.blog-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.main-blog-card {
+    font-size: 1.1em;
+}
+
+.blog-card h2, .blog-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.blog-card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.blog-author {
+    font-size: 0.9em;
+    color: #777;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.recent-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.write-blog-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.write-blog-btn:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.blog-form-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.blog-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.blog-form h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.blog-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.blog-form input, .blog-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.blog-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 1em;
+}
+
+.blog-form button[type="button"] {
+    background-color: #555;
+}
+
+.blog-form button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .blog-content {
+        padding: 10px;
+    }
+
+    .blog-content h1 {
+        font-size: 2em;
+    }
+
+    .blog-card {
+        padding: 15px;
+    }
+
+    .blog-card h2, .blog-card h3 {
+        font-size: 1.5em;
+    }
+
+    .blog-card p {
+        font-size: 0.9em;
+    }
+
+    .blog-author {
+        font-size: 0.8em;
+    }
+
+    .write-blog-btn {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-content {
+        padding: 5px;
+    }
+
+    .blog-content h1 {
+        font-size: 1.5em;
+    }
+
+    .blog-card {
+        padding: 10px;
+    }
+
+    .blog-card h2, .blog-card h3 {
+        font-size: 1.2em;
+    }
+
+    .blog-card p {
+        font-size: 0.8em;
+    }
+
+    .blog-author {
+        font-size: 0.7em;
+    }
+
+    .write-blog-btn {
+        padding: 8px;
+        font-size: 1em;
+    }
+}

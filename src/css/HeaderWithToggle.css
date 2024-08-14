@@ -1,0 +1,69 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Fully transparent background */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /* Ensure it stays above other content */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Optional: add a subtle border for visibility */
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative; /* To position the button absolutely */
+  }
+  
+  .menu-btn {
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px; /* Space between button and logo */
+  }
+  
+  .logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Position logo to the left */
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust height as needed */
+    width: auto;
+  }
+  
+  .user-btn {
+    background-color: #FF8A5C; /* Use one of your colors */
+    color: white;
+    border: none;
+    width: 40px; /* Adjust size of the button */
+    height: 40px; /* Ensure the button is circular */
+    border-radius: 50%; /* Make the button a circle */
+    position: absolute; /* Position button in top right corner */
+    right: 30px; /* Move button 30px from the right edge */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s;
+    text-decoration: none; /* Ensure text decoration is removed */
+    display: flex; /* Center the icon vertically and horizontally */
+    align-items: center;
+    justify-content: center;
+    padding: 5px; /* Add padding inside the button */
+  }
+  
+  .user-btn:hover {
+    background-color: #FF6B4D; /* Darker shade on hover */
+  }
+  
+  .user-icon {
+    font-size: 22px; /* Adjust icon size to fit well inside the button */
+  }
+  

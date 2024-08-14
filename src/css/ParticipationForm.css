@@ -1,0 +1,105 @@
+/* ParticipationForm.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a2c2e6, #f1c6c6); /* Diagonal gradient background */
+    background-size: 600% 600%;
+    animation: gradientBG 5s ease infinite;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    font-size: 1em;
+    color: #333;
+    outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #FF6B4D;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.5);
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #000000;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 0.9em;
+    }
+
+    .submit-button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
